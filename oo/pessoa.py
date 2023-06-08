@@ -1,12 +1,7 @@
-'testando'
-'testando novamente'
+class Pessoa():
+    def cumprimentar(self):
+        return 'ola'
 
-class Pessoa:
-    pass
-
-
-
-
-
-
-
+if __name__ == '__main__':
+    p = Pessoa()
+    print(p.cumprimentar())
