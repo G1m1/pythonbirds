@@ -20,6 +20,16 @@ if __name__ == '__main__':
     for filho in luciano.filhos:
         print(filho.nome)
 
+    luciano.sobrenome = 'Ramalho' # atributo Dinâmico - vc não esta instanciando, isso significa que os outros objetos não partilharam desse atributo.
+    print(luciano.sobrenome)             # apenas o que vc acabou de fazer.
+    print(luciano.__dict__)                   # o atributo especial dict te fala todos os atributos de um objeto do tipo classe
+    print(renzo.__dict__)                       # luciano e renzo são diferentes.
+    print()
+    print()
+    del luciano.filhos # não é muito usual, mas é possivel excluir um atributo, apenas para conhecimento
+    print()
+    print()
+    print()
 
 
 
